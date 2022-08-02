@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     	<meta charset="utf-8">
+     	<meta http-equiv="refresh" content="10">
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+		 <script> 
+		 function myFn(){
+		let n1 = document.getElementById("n1").value;
+		let n2 = document.getElementById("n2").value;
+		n1= Number(n1);
+		n2= Number(n2);
+		//alert(isNaN(n1));
+		if(isNaN(n1) && isNaN(n2)){
+		     document.getElementById("p1").innerHTML= (n1 + n2);
+			 }else{
+		
+		   document.getElementById("p1").innerHTML= "<span style='color:red'>Entered value is not a number</span";
+		   }
+		}
+		/*if(n1== null || n1=="" || n1==" "){
+		//alert("Didn't write anything");
+		document.getElementById("p1").innerHTML= "<span style='color:red'>Didn't  write anything</span";
+		}
+		else{
+		document.getElementById("p1").innerHTML= n1;
+		   }
+		}
+	//	alert(n1);
+ //alert(Boolean(10 >9));
+ /*if(Boolean(10>9)){
+     alert("OK");
+   }
+    else{
+         alert("Not OK");
+		    }
+		 }
+		 
+		 let k=false;
+		 if(k){
+		 alert("OK");
+   }
+    else{
+         alert("Not OK");
+		    }
+		 }
+		 */
+	 </script>
+        
+     </head>
+     <body>
+	 <input type="text" name="n1" id="n1" />
+	 <input type="text" name="n2" id="n2" /><br />
+	    <button onclick="myFn()">Click</button>
+		<p id="p1" ></p>	 
+	 
+	 
+	 </body>
+	 </html>
