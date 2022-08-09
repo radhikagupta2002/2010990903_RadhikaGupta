@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #n1{
+            width: 70%;
+            padding:2px;
+            height: .8cm;
+        }
+        #square{
+            background-color:blue;
+            border: 1px solid blue;
+            width: 0px;
+            height: 0px;
+            margin: auto;
+			transition:height 1s ease-in, width 1s ease-in;
+        }
+        #button{
+            width: 30%;            
+            background-color: black;
+            border: 2px solid black;
+            color: aliceblue;
+            font-size: 0.5cm;
+            border-radius: 3px;
+            margin: auto;
+            margin-top: 1%;
+		
+        }
+		#button:hover{
+		background-color: grey;
+		}
+    </style>
+</head>
+<body style="background-color: rgb(211,144,62);">
+    <div style="text-align: center;">
+        <div style="margin:5%">
+            <h2>Enter a number to create a Square Shape</h2>
+            <input type="number" name="n1" id="n1" required><br>
+            <div id="button" onclick="myfun()"><p>Create Square Shape</p></div>
+            <br>
+            <p id="p1"></p>
+        </div>
+        <div id="square" ></div>
+    </div>
+    <script src="project2.js"></script>
+</body>
+</html>
