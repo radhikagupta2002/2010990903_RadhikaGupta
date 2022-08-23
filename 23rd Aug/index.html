@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     	<meta charset="utf-8">
+     	<meta http-equiv="refresh" content="10">
+     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documents</title>
+        
+     </head>
+	 <body>
+	 <button onclick="f1()">CLICK!</button>
+	 <script>
+	 /*function f1(){
+	 console.log("First");
+	 
+	 setTimeout(function second(){
+	console.log("Time Out");
+	},1000);
+	 console.log("Final!");
+	 }
+	
+	 function f1(){
+	 async function f(){
+	 return Promise.resolve(1);// return 1
+	 }
+	 f().then(alert);
+	 }
+	 */
+	 function f1(){
+	 async function f(){
+	 let promise = new Promise((resolve, reject)=>{
+	 setTimeout(()=>resolve("Done"),1000);
+	 setTimeout(()=>reject("Not Done"),1000);
+	 });
+	 
+	 let result = await promise;
+	 alert(result);
+	 }
+	 f();
+	 }
+	 </script>
+	</body>
+	 </html>
